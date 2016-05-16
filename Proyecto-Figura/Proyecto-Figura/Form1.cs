@@ -27,8 +27,12 @@ namespace WindowsFormsApplication1
             circuloToolStripMenuItem.Checked = true;
         }
 
+        
+
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
+
+
             if (MouseButtons.Right == e.Button)
             {
 
@@ -144,6 +148,14 @@ namespace WindowsFormsApplication1
             figura_actual = TipoFigura.Triangulo;
         }
 
+        private void borrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rectangulos.Clear();
+            this.Invalidate();
+           
+        }
+
+       
         
 
         
