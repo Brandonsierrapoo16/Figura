@@ -36,9 +36,8 @@
             this.rectaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trianguloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.contextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -63,51 +62,47 @@
             // rectanguloToolStripMenuItem
             // 
             this.rectanguloToolStripMenuItem.Name = "rectanguloToolStripMenuItem";
-            this.rectanguloToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.rectanguloToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.rectanguloToolStripMenuItem.Text = "Rectangulo";
+            this.rectanguloToolStripMenuItem.Click += new System.EventHandler(this.rectanguloToolStripMenuItem_Click);
             // 
             // circuloToolStripMenuItem
             // 
             this.circuloToolStripMenuItem.Name = "circuloToolStripMenuItem";
-            this.circuloToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.circuloToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.circuloToolStripMenuItem.Text = "Circulo";
+            this.circuloToolStripMenuItem.Click += new System.EventHandler(this.circuloToolStripMenuItem_Click);
             // 
             // rectaToolStripMenuItem
             // 
             this.rectaToolStripMenuItem.Name = "rectaToolStripMenuItem";
-            this.rectaToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.rectaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.rectaToolStripMenuItem.Text = "Recta";
+            this.rectaToolStripMenuItem.Click += new System.EventHandler(this.rectaToolStripMenuItem_Click);
             // 
             // trianguloToolStripMenuItem
             // 
             this.trianguloToolStripMenuItem.Name = "trianguloToolStripMenuItem";
-            this.trianguloToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.trianguloToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.trianguloToolStripMenuItem.Text = "Triangulo";
+            this.trianguloToolStripMenuItem.Click += new System.EventHandler(this.trianguloToolStripMenuItem_Click);
             // 
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
             this.colorToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.colorToolStripMenuItem.Text = "Color";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(200, 46);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(419, 287);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 412);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
             this.contextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -121,7 +116,7 @@
         private System.Windows.Forms.ToolStripMenuItem rectaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trianguloToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
 
     }
 }
